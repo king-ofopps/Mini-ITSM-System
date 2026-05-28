@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="8866828a474d87502a1531b4116d438c" label="Request type" max_length="40" name="x_1903513_mini_i_0_request_type" type="collection">
+        <element label="Name" max_length="100" name="name" type="string"/>
+        <element label="Default Priority" max_length="40" name="default_priority" type="integer"/>
+        <element label="Fulfillment Group" max_length="32" name="fulfillment_group" reference="sys_user_group" type="reference"/>
+        <element label="SLA Hours" max_length="255" name="sla_hours" type="integer"/>
+        <index name="index">
+            <element name="fulfillment_group"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="e648a24e4709c7502a1531b4116d4343" extends="task" label="Service Request" max_length="40" name="x_1903513_mini_i_0_service_request" type="collection">
+        <element label="Requested For" max_length="32" name="requested_for" reference="sys_user" type="reference"/>
+        <element label="Cost Estimate" max_length="20" name="cost_estimate" type="decimal"/>
+        <element label="Catalog Item Ref" max_length="32" name="catalog_item_ref" reference="sc_req_item" type="reference"/>
+        <element label="Finance Approved" max_length="40" name="finance_approved" type="boolean"/>
+        <element label="Request Type" max_length="32" name="request_type" reference="x_1903513_mini_i_0_request_type" type="reference"/>
+    </element>
+</database>
