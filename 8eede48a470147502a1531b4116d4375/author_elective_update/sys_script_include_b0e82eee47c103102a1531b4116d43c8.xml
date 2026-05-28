@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_1903513_mini_i_0. ItsmaUtils</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name> ItsmaUtils</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var _ItsmaUtils = Class.create();
+_ItsmaUtils.prototype = {
+    initialize: function() {
+    },
+
+    type: '_ItsmaUtils'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-27 14:04:08</sys_created_on>
+        <sys_id>b0e82eee47c103102a1531b4116d43c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name> ItsmaUtils</sys_name>
+        <sys_package display_value=" Mini ITSM System" source="x_1903513_mini_i_0">8eede48a470147502a1531b4116d4375</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value=" Mini ITSM System">8eede48a470147502a1531b4116d4375</sys_scope>
+        <sys_update_name>sys_script_include_b0e82eee47c103102a1531b4116d43c8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-27 14:04:08</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value=" Mini ITSM System">8eede48a470147502a1531b4116d4375</application>
+        <file_path/>
+        <instance_id>3b4a10f63b1c6610677f04e0b5e45a43</instance_id>
+        <instance_name>dev301853</instance_name>
+        <name>sys_script_include_b0e82eee47c103102a1531b4116d43c8</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_1903513_mini_i_0. ItsmaUtils&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description/&gt;&lt;mobile_callable&gt;false&lt;/mobile_callable&gt;&lt;name&gt; ItsmaUtils&lt;/name&gt;&lt;sandbox_callable&gt;false&lt;/sandbox_callable&gt;&lt;script&gt;&lt;![CDATA[var _ItsmaUtils = Class.create();
+_ItsmaUtils.prototype = {
+    initialize: function() {
+    },
+
+    type: '_ItsmaUtils'
+};]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-05-27 14:04:08&lt;/sys_created_on&gt;&lt;sys_id&gt;b0e82eee47c103102a1531b4116d43c8&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt; ItsmaUtils&lt;/sys_name&gt;&lt;sys_package display_value=" Mini ITSM System" source="x_1903513_mini_i_0"&gt;8eede48a470147502a1531b4116d4375&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value=" Mini ITSM System"&gt;8eede48a470147502a1531b4116d4375&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_b0e82eee47c103102a1531b4116d43c8&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-05-27 14:04:08&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-713661416</payload_hash>
+        <record_name> ItsmaUtils</record_name>
+        <reverted_from/>
+        <source>f537b1c2478947502a1531b4116d433e</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-27 14:04:09</sys_created_on>
+        <sys_id>d518fe22474903102a1531b4116d43ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19e69bffb0b0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-27 14:04:09</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>5518fe22044903101f00f4e2a3ba95b9</update_guid>
+        <update_guid_history>5518fe22044903101f00f4e2a3ba95b9:-713661416</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-28 00:03:02</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>6f8753d8cbc24824a0a0fd7b7ed6ea41</sys_id>
+        <sys_metadata>b0e82eee47c103102a1531b4116d43c8</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name> ItsmaUtils</sys_name>
+        <sys_package display_value=" Mini ITSM System" source="x_1903513_mini_i_0">8eede48a470147502a1531b4116d4375</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value=" Mini ITSM System">8eede48a470147502a1531b4116d4375</sys_scope>
+        <sys_scope_delete display_value="">41ca9de7a07e47049094bfb4d99a1210</sys_scope_delete>
+        <sys_update_name>sys_script_include_b0e82eee47c103102a1531b4116d43c8</sys_update_name>
+        <sys_update_version display_value="sys_script_include_b0e82eee47c103102a1531b4116d43c8">d518fe22474903102a1531b4116d43ba</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-28 00:03:02</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_1903513_mini_i_0. ItsmaUtils </api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>This Script Include defines the ItsmaUtils utility class for working with request types. It centralizes field lookups with a generalized getFieldValue method that includes robust error handling (logging errors for missing sys_ids, missing records, or exceptions, and warnings for empty fields). Specialized helpers (getAssignmentGroup, getDefaultPriority) call into this method to return the fulfillment group or default priority with safe fallback values. The design improves consistency, maintainability, and debugging visibility while ensuring workflows continue with defaults when data is missing.</description>
+        <mobile_callable>false</mobile_callable>
+        <name> ItsmaUtils </name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var ItsmaUtils = Class.create();
+ItsmaUtils.prototype = {
+    initialize: function() {},
+
+    // Generalized field lookup with error handling
+    getFieldValue: function(requestTypeSysId, fieldName, defaultValue) {
+        try {
+            if (!requestTypeSysId) {
+                gs.error("ItsmaUtils.getFieldValue: requestTypeSysId is null or undefined");
+                return defaultValue;
+            }
+            if (!fieldName) {
+                gs.error("ItsmaUtils.getFieldValue: fieldName is null or undefined");
+                return defaultValue;
+            }
+
+            var gr = new GlideRecord('x_1903513_mini_i_0_request_type');
+            if (gr.get(requestTypeSysId)) {
+                var value = gr.getValue(fieldName);
+                if (!value) {
+                    gs.warn("ItsmaUtils.getFieldValue: Field '" + fieldName + "' is empty for sys_id " + requestTypeSysId);
+                    return defaultValue;
+                }
+                return value;
+            } else {
+                gs.error("ItsmaUtils.getFieldValue: No record found for sys_id " + requestTypeSysId);
+            }
+        } catch (e) {
+            gs.error("ItsmaUtils.getFieldValue: Exception occurred - " + e.message);
+        }
+        return defaultValue;
+    },
+
+    // Specialized helper using getFieldValue
+    getAssignmentGroup: function(requestTypeSysId) {
+        return this.getFieldValue(requestTypeSysId, 'u_fulfillment_group', null);
+    },
+
+    // Specialized helper using getFieldValue
+    getDefaultPriority: function(requestTypeSysId) {
+        return this.getFieldValue(requestTypeSysId, 'u_default_priority', 3);
+    },
+
+    type: 'ItsmaUtils'
+};
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-27 20:52:44</sys_created_on>
+        <sys_id>74f4dc3e478543102a1531b4116d4334</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name> ItsmaUtils </sys_name>
+        <sys_package display_value=" Mini ITSM System" source="x_1903513_mini_i_0">8eede48a470147502a1531b4116d4375</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value=" Mini ITSM System">8eede48a470147502a1531b4116d4375</sys_scope>
+        <sys_update_name>sys_script_include_74f4dc3e478543102a1531b4116d4334</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-27 23:32:06</sys_updated_on>
+    </sys_script_include>
+</record_update>
